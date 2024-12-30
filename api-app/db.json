@@ -1,0 +1,71 @@
+{
+    "semestres": [
+      { "sem_id": 1, "sem_numeracao": 1, "sem_descricao": "Primeiro Semestre" },
+      { "sem_id": 2, "sem_numeracao": 2, "sem_descricao": "Segundo Semestre" },
+      { "sem_id": 3, "sem_numeracao": 3, "sem_descricao": "Terceiro Semestre" },
+      { "sem_id": 4, "sem_numeracao": 4, "sem_descricao": "Quarto Semestre" },
+      { "sem_id": 5, "sem_numeracao": 5, "sem_descricao": "Quinto Semestre" },
+      { "sem_id": 6, "sem_numeracao": 6, "sem_descricao": "Sexto Semestre" }
+    ],
+    
+    "cursos": [
+      { "cur_id": 1, "cur_nome": "Análise e Desenvolvimento de Sistemas", "cur_sigla": "ADS" }
+    ],
+  
+    "aluno": {
+      "alu_id": 1,
+      "alu_nome": "João Silva",
+      "alu_ra": "1234",
+      "alu_email": "j@g.com",
+      "alu_codigodeverificacao": "12345",
+      "alu_datavestibular": "2020-01-10T00:00:00Z",
+      "alu_classificacao": 10,
+      "alu_semestrespercorridos": 4,
+      "sta_id": 1,
+      "cur_id": 1
+    },
+  
+    "historico": [
+      { "his_id": 1, "his_disciplina": "Lógica de Programação", "his_nota": 8.5, "his_falta": 2, "cur_id": 1, "sem_id": 1, "alu_id":1 },
+      { "his_id": 2, "his_disciplina": "Banco de Dados I", "his_nota": 7.0, "his_falta": 3, "cur_id": 1, "sem_id": 2, "alu_id":1 },
+      { "his_id": 3, "his_disciplina": "Estruturas de Dados", "his_nota": 9.0, "his_falta": 0, "cur_id": 1, "sem_id": 3, "alu_id":1 },
+      { "his_id": 4, "his_disciplina": "Programação Orientada a Objetos", "his_nota": 8.2, "his_falta": 1, "cur_id": 1, "sem_id": 4, "alu_id":1 }
+    ],
+  
+    "avisos": [
+      { "avi_id": 1, "avi_datainicio": "2024-10-01T00:00:00Z", "avi_datafim": "2025-12-30T00:00:00Z", "cur_id": 1, "avi_descricao": "Aviso importante sobre estágio obrigatório." },
+      { "avi_id": 2, "avi_datainicio": "2024-10-02T00:00:00Z", "avi_datafim": "2024-12-30T00:00:00Z", "cur_id": 1, "avi_descricao": "Aviso importante - Documento Pendente." },
+      { "avi_id": 3, "avi_datainicio": "2024-10-03T00:00:00Z", "avi_datafim": "2024-12-30T00:00:00Z", "cur_id": 1, "avi_descricao": "Aviso importante - Rematrícula." }
+    ],
+  
+    "status": [
+      { "sta_id": 1, "sta_descricao": "Matriculado" }
+    ],
+  
+    "professores": [
+      { "pro_id": 1, "pro_nome": "Maria Oliveira", "pro_cargo": "Professor(a)", "pro_email": "maria.oliveira@email.com" },
+      { "pro_id": 2, "pro_nome": "Anna Maria", "pro_cargo": "Coordenador(a)", "pro_email": "anna.maria@email.com" },
+      { "pro_id": 3, "pro_nome": "Adriana Silva", "pro_cargo": "Professor(a)", "pro_email": "adriana.silva@email.com" },
+      { "pro_id": 4, "pro_nome": "Márcia Freitas", "pro_cargo": "Professor(a)", "pro_email": "marcia.freitas@email.com" },
+      { "pro_id": 5, "pro_nome": "Patrícia Dias", "pro_cargo": "Professor(a)", "pro_email": "patricia.dias@email.com" },
+      { "pro_id": 6, "pro_nome": "Kamila Souza", "pro_cargo": "Diretor(a)", "pro_email": "kamila.souza@email.com" }
+    ],
+  
+    "disciplinas": [
+      { "dis_id": 1, "dis_sigla": "LP", "dis_nome": "Lógica de Programação", "pro_id": 1 },
+      { "dis_id": 2, "dis_sigla": "BD1", "dis_nome": "Banco de Dados I", "pro_id": 1 },
+      { "dis_id": 3, "dis_sigla": "ED", "dis_nome": "Estruturas de Dados", "pro_id": 1 },
+      { "dis_id": 4, "dis_sigla": "POO", "dis_nome": "Programação Orientada a Objetos", "pro_id": 1 }
+    ],
+  
+    "aulas": [
+      { "aul_id": 1, "aul_diasemana": "Segunda-feira", "aul_hora": "14:00", "aul_data": "2024-10-01T14:00:00Z", "aul_presenca": 1, "aul_descricao": "Primeira aula de revisão", "alu_id": 1, "dis_id": 4 },
+      { "aul_id": 2, "aul_diasemana": "Terça-feira", "aul_hora": "14:00", "aul_data": "2024-10-02T14:00:00Z", "aul_presenca": 1, "aul_descricao": "Introdução a herança", "alu_id": 1, "dis_id": 4 }
+    ],
+    "avisos_aluno": [
+        { "avialu_id": 1, "avialu_datainicio": "2024-10-01T00:00:00Z", "avialu_datafim": "2024-12-30T00:00:00Z", "alu_id": 1, "avialu_descricao": "Aviso: Estágio obrigatório." },
+        { "avialu_id": 2, "avialu_datainicio": "2024-10-01T00:00:00Z", "avialu_datafim": "2024-12-30T00:00:00Z", "alu_id": 1, "avialu_descricao": "Aviso: Rematrícula." },
+        { "avialu_id": 3, "avialu_datainicio": "2024-10-01T00:00:00Z", "avialu_datafim": "2024-12-30T00:00:00Z", "alu_id": 1, "avialu_descricao": "Aviso: Documentos." },
+        { "avialu_id": 4, "avialu_datainicio": "2024-10-01T00:00:00Z", "avialu_datafim": "2025-12-30T00:00:00Z", "alu_id": 1, "avialu_descricao": "Aviso: Notas." }
+      ]
+  }
